@@ -54,7 +54,7 @@ addButton.addEventListener("click", function () {
       countedTask++;
     }
 
-    counter.innerText = `${countedTask} Completed`;
+    counter.innerText = `${countedTask} completed`;
   });
 
   //add a listener for trashcan
