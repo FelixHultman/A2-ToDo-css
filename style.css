@@ -14,8 +14,8 @@ html {
   text-align: center;
   padding-bottom: 50px;
   border-width: 400px;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin-top: 20px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
 }
@@ -50,6 +50,10 @@ ul {
   padding: 5px 10px;
   font-size: 25px;
 }
+#input:active {
+  border-color: blue;
+  outline: none;
+}
 p {
   font-size: 20px;
   font-style: bold;
@@ -63,9 +67,10 @@ p {
 
 #input {
   font-size: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
   padding: 5px;
   border-radius: 5px;
+  border: solid black 1px;
 }
 span:hover {
   text-decoration: line-through;
