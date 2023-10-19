@@ -1,5 +1,5 @@
 html {
-  background-image: linear-gradient(rgb(241, 194, 201), rgb(173, 86, 70));
+  background-image: linear-gradient(rgb(248, 201, 201), rgb(255, 130, 129));
   height: 100vh;
   display: flex;
   margin: auto;
@@ -9,7 +9,7 @@ html {
 
 .makeBorder {
   animation: dropAndBounce 0.8s;
-  background-color: rgb(252, 246, 246);
+  background-color: white;
 
   text-align: center;
   padding-bottom: 50px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 li {
-  font-size: 20px;
+  font-size: 30px;
   margin-right: 15px;
   animation: popUp 0.5s;
   font-weight: 500;
@@ -51,15 +51,30 @@ ul {
   padding: 5px 10px;
   font-size: 25px;
 }
+.trashcan:active {
+  color: grey;
+}
 #input:active {
   border-color: blue;
   outline: none;
 }
 p {
+  animation-name: flash;
+  animation-duration: 0.5s;
+  animation-iteration-count: 3;
   font-size: 20px;
   font-style: bold;
   color: red;
 }
+p:empty {
+  display: none;
+}
+/* p.show {
+  opacity: 1;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+} */
 #forInput {
   animation: fadeInElements 1.3s;
   display: flex;
@@ -80,6 +95,7 @@ span:hover {
 .trashcan:hover {
   text-decoration: none;
 }
+
 span {
   margin-right: 20px;
 }
@@ -112,5 +128,13 @@ span {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
