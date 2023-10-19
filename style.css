@@ -1,10 +1,12 @@
 html {
   background-image: linear-gradient(rgb(248, 201, 201), rgb(255, 130, 129));
-  height: 100vh;
+  height: 100%;
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: flex-start;
+  box-sizing: border-box;
+  min-width: 400px;
 }
 
 .makeBorder {
@@ -48,7 +50,9 @@ ul {
   list-style: none;
 }
 #btn {
-  padding: 5px 10px;
+  height: 38px;
+  width: 60px;
+  /* padding: 5px 10px; */
   font-size: 25px;
 }
 .trashcan:active {
@@ -56,15 +60,18 @@ ul {
 }
 #input:active {
   border-color: blue;
-  outline: none;
+  outline-color: blue;
 }
 p {
   animation-name: flash;
   animation-duration: 0.5s;
   animation-iteration-count: 3;
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
+  font-style: italic;
   color: red;
+  margin-top: 5px;
 }
 p:empty {
   display: none;
@@ -82,6 +89,8 @@ p:empty {
 }
 
 #input {
+  height: 25px;
+  width: 250px;
   font-size: 20px;
   margin-right: 10px;
   padding: 5px;
