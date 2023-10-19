@@ -64,7 +64,7 @@ addButton.addEventListener("click", function () {
       countedTask--;
     }
 
-    counter.innerText = `${countedTask} Completed`;
+    counter.innerText = `${countedTask} completed`;
 
     //set todoArray
     let removeText = item.firstChild.firstChild.textContent;
