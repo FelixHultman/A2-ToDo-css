@@ -58,9 +58,8 @@ ul {
 .trashcan:active {
   color: grey;
 }
-#input:active {
-  border-color: blue;
-  outline-color: blue;
+#input:focus {
+  outline-color: 1.5px solid blue;
 }
 p {
   animation-name: flash;
