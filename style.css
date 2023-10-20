@@ -55,11 +55,14 @@ ul {
   /* padding: 5px 10px; */
   font-size: 25px;
 }
-.trashcan:active {
+.trashcan {
   color: grey;
 }
+.trashcan:active {
+  color: black;
+}
 #input:focus {
-  outline-color: 1.5px solid blue;
+  outline-color: blue;
 }
 p {
   animation-name: flash;
