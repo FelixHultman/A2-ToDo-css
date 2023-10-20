@@ -38,7 +38,6 @@ li {
   margin-right: 15px;
   animation: popUp 0.5s;
   font-weight: 500;
-  animation: popUp 0.5s;
 }
 
 .completed {
@@ -138,12 +137,14 @@ span {
 @keyframes popUp {
   0% {
     transform: translateY(40%);
+    opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
     transform: translateY(0%);
+    opacity: 1;
   }
 }
 @keyframes flash {
