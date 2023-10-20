@@ -38,6 +38,7 @@ li {
   margin-right: 15px;
   animation: popUp 0.5s;
   font-weight: 500;
+  animation: popUp 0.5s;
 }
 
 .completed {
@@ -110,6 +111,7 @@ span:hover {
 span {
   margin-right: 20px;
 }
+
 @keyframes dropAndBounce {
   0% {
     transform: translateY(-70%);
@@ -136,6 +138,9 @@ span {
 @keyframes popUp {
   0% {
     transform: translateY(40%);
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0%);
